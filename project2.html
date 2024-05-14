@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 2 - Sonic Warning</title>
+    <title>Interactive Audio Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        #playButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+        #playButton:hover {
+            background-color: #0056b3;
+        }
+        audio {
+            margin-top: 20px; /* Adds space above the audio element */
+            width: 100%; /* Full width */
+            max-width: 600px; /* Limit width for large screens */
+        }
+    </style>
 </head>
 <body>
-    <h1>Project 2: Sonic Warning</h1>
-    <p>Sonic Warning for texting and Driving.</p>
-    <audio controls>
+    <h1>Interactive Audio Player</h1>
+    <button id="playButton">Play Audio</button>
+    <audio id="myAudio" controls>
         <source src="Sonic_warning_Final_Singh.wav" type="audio/wav">
         Your browser does not support the audio element.
     </audio>
+
+    <script src="audioScript.js"></script>
 </body>
 </html>
