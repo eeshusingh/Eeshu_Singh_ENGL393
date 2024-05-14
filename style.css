@@ -3,32 +3,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #e8eff1;
     padding: 20px;
 }
 
 header {
-    background: #333;
+    background: linear-gradient(135deg, #6b7dff, #b224ef);
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
     list-style-type: none;
-    background: #444;
+    background: #404040;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 nav ul li {
@@ -39,22 +42,32 @@ nav ul li a {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 section {
     margin: 20px 0;
     padding: 20px;
     background: white;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #333;
+    background: #2c3e50;
     color: #fff;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
 }
 
 footer p {
-    margin: 0;
+    font-size: 1.1rem;
 }
