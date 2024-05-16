@@ -3,41 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eeshu Singh - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to a stylesheet if you have one -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Eeshu Singh</h1>
-        <p>This portfolio showcases my projects, reflections, and write ups from my technical communication class.</p>
+        <div class="container">
+            <div id="branding">
+                <h1>My Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0)" onclick="showSection('overview')">Home</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('biography')">Biography</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('statement-of-learning')">Statement of Learning</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('major-projects')">Major Projects</a></li>
+                    <li><a href="javascript:void(0)" onclick="showSection('other-assignments')">Other Assignments</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="biography">
-        <h2>Biography</h2>
-        <p>A brief description about yourself. <a href="biography.html">Read more...</a></p>
-    </section>
-    <section id="statement">
-        <h2>Statement of Learning</h2>
-        <p>A summary of key lessons learned in the class. <a href="statement.html">Read more...</a></p>
-    </section>
-    <section id="projects">
-        <h2>Major Projects</h2>
-        <ul>
-            <li><a href="project1.html" target="_blank">Rhetorical Analysis</a></li>
-            <li><a href="project2.html">Sonic Warning</a></li>
-            <li><a href="project3.html" target="_blank">Instructions</a></li>
-        </ul>
-    </section>
-    <section id="writings">
-        <h2>Other Assignments</h2>
-        <ul>
-            <li><a href="RhetAnalysisShortText.html" target="_blank">Rhetorical Analysis On A Short Text</a></li>
-            <li><a href="SocietyOfTechincalCommunication.html" target="_blank">Scoiety of Technical Communication Website Reflection</a></li>
-        </ul>
-    </section>
-    <footer>
-        <h2>Contact Information</h2>
-        <p>singheeshu105@gmail.com, https://www.linkedin.com/in/eeshu-singh/</p>
-    </footer>
+    <div class="container">
+        <section id="overview" class="active">
+            <h2>Portfolio Overview</h2>
+            <div class="glimpse">
+                <h3>Biography</h3>
+                <p>Introduction: I am a dedicated student at the University of Maryland, Baltimore County (UMBC), pursuing a degree in Computer Science. With a passion for technology and innovation, I strive to excel academically and contribute to impactful projects.</p>
+                <p><a href="javascript:void(0)" onclick="showSection('biography')">Read more...</a></p>
+            </div>
+            <div class="glimpse">
+                <h3>Statement of Learning</h3>
+                <p>Personal Growth: During this English class, I focused on enhancing critical reading and writing skills. The course objectives included analyzing texts, constructing well-organized essays, and engaging in meaningful discussions.</p>
+                <p><a href="javascript:void(0)" onclick="showSection('statement-of-learning')">Read more...</a></p>
+            </div>
+            <h3>Major Projects</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Project 1: Rhetorical Analysis of a Billboard</h3>
+                    <p><strong>Description:</strong> 
+                        An analysis on a local billboard for its rhetorical elements, such as purpose, audience, tone, message, and appeals.
+                     </p>
+                    <p><a href="ENGL 393 Billboard Rhetorical Analysis Final Draft - Revised.pdf" onclick="showSection('project-1')">View Project...</a></p>
+                </div>
+                <div class="card">
+                    <h3>Project 2: Texting and Driving Sonic Warning</h3>
+                    <p><strong>Description:</strong> This assignment is and audio warning with the purpose of conveying the consequences of texting while driving, warning the listeners. 
+                        It is a short 30 second warning that uses sound rhetorically to make an argument.</p>
+                    <p><a href="Sonic_warning_Final_Singh (2).wav" onclick="showSection('project-2')">View Project...</a></p>
+                </div>
+                <div class="card">
+                    <h3>Project 3: Technical Instruction Manual on How To Build a Gaming PC</h3>
+                    <p><strong>Description:</strong> A set of instructions 
+                        about how one can assemble a gaming PC. The intended audience are people who are not experts in
+                        information systems, but do have some knowledge about issues, concepts, etc. in the
+                        major.</p>
+                    <p><a href="How to build a Gaming PC Instructions (Final) - Eeshu Singh (3).pdf" onclick="showSection('project-3')">View Project...</a></p>
+                </div>
+            </div>
+            <h3>Other Assignments</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Assignment 1: Reflection of the Society of Technical Communication Website</h3>
+                    <p><strong>Description:</strong> This assignment is a brief reflection of the Society of Technical Communication Website. 
+                        In this, I share my thoughts about what I think about this website.</p>
+                    <p><a href="ENGL 393 HW Eeshu Singh - Society of Technical Communication.pdf" onclick="showSection('assignment-1')">View Assignment...</a></p>
+                </div>
+                <div class="card">
+                    <h3>Assignment 2: Rhetorical Analysis of a short text</h3>
+                    <p><strong>Description:</strong> This assignment is a rhetorical analysis of the short story "Killer In The Willows" by Kajsa Ohman, 
+                        focusing on descriptive settings, mood changes, and character emotions.</p>
+                    <p><a href="Eeshu Singh ENGL 393 Rhetorical Analysis on a short text.pdf" onclick="showSection('assignment-2')">View Assignment...</a></p>
+                </div>
+                <div class="card">
+                    <h3>Assignment 3: My Writing Process</h3>
+                    <p><strong>Description:</strong> This assignment is an analysis on my personal writing process. 
+                        It highlights the challenges, strategies, and the nature of my approach to writing.</p>
+                    <p><a href="ENGL 393 - Eeshu Singh Writing Process.pdf" onclick="showSection('assignment-3')">View Assignment...</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="biography">
+            <h2>Biography</h2>
+            <p><strong>Introduction:</strong> I am a compassionate, astute, and adventurous person filled with curiosity and interest in
+                information systems and engineering. I have analytical thinking, problem-solving, and
+                organizational skills that I have gained from participating in various activities in and outside of
+                school. I am currently pursuing a B.S. in Information Systems at the University of Maryland,
+                Baltimore County. During my academic years, I have focused on expanding my knowledge. 
+                I am looking forward to the learning opportunities in the
+                field of Information Systems, which can help me build a successful career.</p>
+            <p><strong>Education:</strong> I am currently enrolled in UMBC, focusing on a comprehensive curriculum that includes programming, data structures, algorithms, and software engineering. Eeshu has consistently achieved high grades and is actively involved in campus activities and clubs.</p>
+            <p><strong>Experience:</strong> I have interned at various tech companies, gaining practical experience in software development, project management, and teamwork. I am proficient in multiple programming languages and has worked on several collaborative projects.</p>
+            <p><strong>Skills:</strong> My key skills include programming in Java, Python, and C++, web development, database management, and problem-solving. I also possesses strong communication and leadership skills, making me a valuable team player.</p>
+        </section>
+
+        <section id="statement-of-learning">
+            <h2>Statement of Learning</h2>
+            <p><strong>Personal Growth:</strong> During the English class, I focused on enhancing critical reading and writing skills. The course objectives included analyzing texts, constructing well-organized essays, and engaging in meaningful discussions.</p>
+            <p><strong>Key Learnings:</strong> I learned to interpret complex literary works, develop coherent arguments, and present ideas effectively. The class also emphasized the importance of peer review and constructive feedback, which helped Eeshu improve his writing and analytical abilities.</p>
+            <p><strong>Future Goals:</strong> I aim to further develop his communication skills and apply them in technical writing and presentations. The skills acquired in this English class will be instrumental in Eeshu's academic and professional endeavors, particularly in areas requiring clear and persuasive communication.</p>
+        </section>
+
+        <section id="major-projects">
+            <h2>Major Projects</h2>
+            <div class="project">
+                <p class="project-title">Project 1: Rhetorical Analysis of a Billboard</p>
+                <p><strong>Description:</strong> An analysis on a local billboard for its rhetorical elements, such as purpose, audience, tone, message, and appeals.</p>
+                <!-- <p><strong>Objectives:</strong> [Objectives]</p> -->
+                <p><a href="ENGL 393 Billboard Rhetorical Analysis Final Draft - Revised.pdf" onclick="showSection('project-1')">View Project...</a></p>
+            </div>
+            <div class="project">
+                <p class="project-title">Project 2: Texting and Driving Sonic Warning</p>
+                <p><strong>Description:</strong> This assignment is and audio warning with the purpose of conveying the consequences of texting while driving, warning the listeners. 
+                    It is a short 30 second warning that uses sound rhetorically to make an argument.</p>
+                <!-- <p><strong>Objectives:</strong> [Objectives]</p> -->
+                <p><a href="Sonic_warning_Final_Singh (2).wav" onclick="showSection('project-2')">View Project...</a></p>
+            </div>
+            <div class="project">
+                <p class="project-title">Project 3: Technical Instruction Manual on How To Build a Gaming PC</p>
+                <p><strong>Description:</strong> A set of instructions 
+                    about how one can assemble a gaming PC. The intended audience are people who are not experts in
+                    information systems, but do have some knowledge about issues, concepts, etc. in the
+                    major.</p>
+                <!-- <p><strong>Objectives:</strong> [Objectives]</p> -->
+                <p><a href="How to build a Gaming PC Instructions (Final) - Eeshu Singh (3).pdf" onclick="showSection('project-3')">View Project...</a></p>
+            </div>
+        </section>
+
+        <section id="project-1">
+            <h2>Project 1: Rhetorical Analysis of a Billboard</h2>
+            <p><strong>Description:</strong> 
+                Analyze a local billboard for its rhetorical elements, such as purpose, audience, tone, message, and appeals. 
+                Visit the billboard, photograph it, and take detailed notes. Write a rhetorical analysis using textual evidence. 
+                If a local billboard isn't available, use one from Google Images.</p>
+            <p><strong>Objectives:</strong> [Objectives]</p>
+            <embed src="ENGL 393 Billboard Rhetorical Analysis Final Draft - Revised.pdf" width="100%" height="600px" type="application/pdf">
+            <p><a href="javascript:void(0)" onclick="showSection('major-projects')">Back to Major Projects</a></p>
+        </section>
+
+        <section id="project-2">
+            <h2>Project 2: Texting and Driving Sonic Warning</h2>
+            <p><strong>Description:</strong> [This assignment is and audio warning with the purpose of conveying the consequences of texting while driving, warning the listeners. 
+                It is a short 30 second warning that uses sound rhetorically to make an argument. ]</p>
+            <p><strong>Objectives:</strong> [Objectives]</p>
+            <embed src="Sonic_warning_Final_Singh (2).wav" width="100%" height="600px" type="application/pdf">
+            <p><a href="javascript:void(0)" onclick="showSection('major-projects')">Back to Major Projects</a></p>
+        </section>
+
+        <section id="project-3">
+            <h2>Project 3: Technical Instruction Manual on How To Build a Gaming PC</h2>
+            <p><strong>Description:</strong> [Description]</p>
+            <p><strong>Objectives:</strong> [Objectives]</p>
+            <embed src="How to build a Gaming PC Instructions (Final) - Eeshu Singh (3).pdf" width="100%" height="600px" type="application/pdf">
+            <p><a href="javascript:void(0)" onclick="showSection('major-projects')">Back to Major Projects</a></p>
+        </section>
+
+        <section id="other-assignments">
+            <h2>Other Assignments</h2>
+            <div class="assignment">
+                <p class="assignment-title">Assignment 1: Reflection of the Society of Technical Communication Website</p>
+                <p><strong>Description:</strong>  This assignment is a brief reflection of the Society of Technical Communication Website. 
+                    In this, I share my thoughts about what I think about this website.</p>
+                <p><a href="ENGL 393 HW Eeshu Singh - Society of Technical Communication.pdf" onclick="showSection('assignment-1')">Read more...</a></p>
+            </div>
+            <div class="assignment">
+                <p class="assignment-title">Assignment 2: Rhetorical Analysis of a short text</p>
+                <p><strong>Description:</strong> This assignment is a rhetorical analysis of the short story "Killer In The Willows" by Kajsa Ohman, 
+                    focusing on descriptive settings, mood changes, and character emotions.</p>
+                <p><a href="Eeshu Singh ENGL 393 Rhetorical Analysis on a short text.pdf" onclick="showSection('assignment-2')">Read more...</a></p>
+            </div>
+            <div class="assignment">
+                <p class="assignment-title">Assignment 3: My Writing Process</p>
+                <p><strong>Description:</strong> This assignment is an analysis on my personal writing process. 
+                    It highlights the challenges, strategies, and the nature of my approach to writing.</p>
+                <p><a href="ENGL 393 - Eeshu Singh Writing Process.pdf" onclick="showSection('assignment-3')">Read more...</a></p>
+            </div>
+        </section>
+        <section id="assignment-1">
+            <h2>Assignment 1: [Title]</h2>
+            <p><strong>Description:</strong> [Description]</p>
+            <embed src="/mnt/data/Aromatic Compound_E.pdf" width="100%" height="600px" type="application/pdf">
+            <p><a href="javascript:void(0)" onclick="showSection('other-assignments')">Back to Other Assignments</a></p>
+        </section>
+
+        <section id="assignment-2">
+            <h2>Assignment 2: [Title]</h2>
+            <p><strong>Description:</strong> [Description]</p>
+            <embed src="/mnt/data/Aromatic Compound_E.pdf" width="100%" height="600px" type="application/pdf">
+            <p><a href="javascript:void(0)" onclick="showSection('other-assignments')">Back to Other Assignments</a></p>
+        </section>
+
+        <section id="assignment-3">
+            <h2>Assignment 3: [Title]</h2>
+            <p><strong>Description:</strong> [Description]</p>
+            <embed src="/mnt/data/Aromatic Compound_E.pdf" width="100%" height="600px" type="application/pdf">
+            <p><a href="javascript:void(0)" onclick="showSection('other-assignments')">Back to Other Assignments</a></p>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>Contact: <a href="mailto:singheeshu105@gmail.com">singheeshu105@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/eeshu-singh" target="_blank">linkedin.com/in/eeshu-singh</a></p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
